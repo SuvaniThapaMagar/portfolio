@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(/img/background.avif);
+    background-size: cover;
+}
+#header{
+    width: 100%;
+    height: 100%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+i{
+    font-size: 30px;
+}
+.head-contain{
+    padding: 15px 15px;
+}
+.head-contain .logo a{
+    font-family: 'Beau Rivage', cursive;
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+}
+.head-contain .logo a:hover{
+    color: rgb(150, 167, 236);;
+}
+.head-contain ol button{
+    font-size: 30px;
+}
+.head-contain ol li{
+    font-family: 'Press Start 2P', cursive;
+    display: inline;
+    margin: 20px 30px;
+}
+.head-contain ol li a{
+    text-decoration: none;
+    color: black;
+}
+.head-contain ol li a:hover{
+    color: rgb(150, 167, 236);
+}
+/* About me */
+#about{
+    font-family: 'Press Start 2P', cursive;
+    padding: 10px 10px;
+    display: block;
+}
+.image1{
+    width: 70px;
+    height: 50px;
+    padding-right: 350px;
+    float: right;
+}
+.image1 img{
+    width: 60vh;
+    height: 80vh;
+    border-radius: 5%;
+}
+.image2{
+    position: relative;
+    width: 50px;
+    height: 50px; 
+    padding-left: 820px;
+    animation-name: suv;
+    animation-duration: 3s;
+    animation-delay: 0s;
+}
+@keyframes suv{
+    0% {left: 0px; top: 0px;}
+    25%{left: 200px; top: 0px;}
+    50%{left: 200px; top: 0px;}
+    100%{left: 0px; top: 0px;}
+}
+.image2 img{
+    width: 95px;
+    height: 170px;
+    margin-left: 25px;
+}
+.image3{
+    position: absolute;
+    width: 50px;
+    height: 10vh;
+    padding-top: 250px;
+    padding-left: 580px; 
+    float: right;
+    animation-name: suv2;
+    animation-duration: 4s;
+}
+@keyframes suv2{
+    0% {left: 0px; top: 0px;}
+    25%{left: 200px; top: 0px;}
+    50%{left: 200px; top: 145px;}
+    100%{left: 10px; top: 145px;}
+}
+.image3 img{
+    width: 150px;
+    height: 240px;
+    margin-left: 270px;
+    margin-bottom: 100px;
+}
+.text{
+    padding: 100px 30px;
+}
+.text h1{
+    font-size: 30px;
+}
+.text p{
+    font-size: 20px;
+}

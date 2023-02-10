@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(/img/background2.jpg);
+    background-size: cover;
+    font-family: 'Press Start 2P', cursive;
+}
+#header{
+    width: 100%;
+    height: 100%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.dark-mode{
+    background-color: rgb(51, 48, 48);
+    color: #FFCCCC;
+}
+i{
+    font-size: 30px;
+}
+.head-contain{
+    padding: 15px 15px;
+}
+.head-contain .logo a{
+    font-family: 'Beau Rivage', cursive;
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+}
+.head-contain .logo a:hover{
+    color: rgb(150, 167, 236);;
+}
+.head-contain ol button{
+    font-size: 30px;
+}
+.head-contain ol li{
+    font-family: 'Press Start 2P', cursive;
+    display: inline;
+    margin: 20px 30px;
+}
+.head-contain ol li a{
+    text-decoration: none;
+    color: black;
+}
+.head-contain ol li a:hover{
+    color: rgb(150, 167, 236);
+}
+#icon{
+    width: 30px;
+    cursor: pointer;
+}
+/* Interest */
+#interest{
+    padding: 50px 40px;
+}
+.heading{
+    font-size: 30px;
+    text-align: center;
+}
+.int-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 10fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.int-box{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.int-box img{
+    width: 100%;
+    display: block;   
+    transition: transform 0.5s;
+}
+.inte{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(228, 178, 178, 0.6), white);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 15px;
+    transition: height 0.5s;
+}
+.inte h3{
+    margin-bottom: 20px;
+}
+.int-box:hover img{
+    transform: scale(1.1) ;
+}
+.int-box:hover .inte{
+    height: 100%;
+}
+.int-box a{
+    text-decoration: none;
+    color: black;
+}
+.int-box a:hover{
+    color: gray;
+}
+.dark{
+    float: right;
+}
+.dark i{
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+}
+.dark button{
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+}
